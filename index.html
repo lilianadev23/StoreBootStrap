@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LilianaShop</title>
+    <!-- CSS page -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- CSS Bootstrap 5.3 -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- Start NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark opacity-75 bg-dark mt-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" href="#">LilianaShop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              LilianaShop
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Header -->
+    <section class="container-fluid header">
+      <div class="content position-absolute top-50 start-50 translate-middle">
+        <h1 class="display-1 fw-bold text-info">LilianaShop</h1>
+        <h2 class="display-3 fw-bold text-warning">LilianaShop</h2>
+        <p class="fs-4 text-light mb-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit.
+        </p>
+        <button type="button" class="btn btn-outline-info btn-lg">
+          Catalogue
+        </button>
+        <button type="button" class="btn btn-outline-warning btn-lg ms-3">
+          S'inscrire
+        </button>
+      </div>
+    </section>
+    <!-- Fin header -->
+    <!-- Start About -->
+    <section class="about">
+      <div class="container mt-3">
+        <div class="row g-5">
+          <div class="col-lg-6 col-sm-12">
+            <img
+              src="images/home.jpg"
+              class="img-fluid"
+              style="object-fit: cover"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <h1>About</h1>
+            <hr class="border w-25 border-primary border-3 opacity-75" />
+            <hr class="border w-50 border-primary border-3 opacity-75" />
+            <p class="fs-5" style="text-align: justify">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut velit
+              eveniet commodi sequi at perspiciatis dolores excepturi, eos ipsa
+              ducimus vel voluptatibus assumenda consequuntur amet mollitia
+              iusto ad id. Molestias architecto esse beatae nesciunt. Nemo ipsa
+              nihil distinctio repellat dignissimos fugiat magnam quas voluptas,
+              dolores, reiciendis debitis et quam placeat cum neque repellendus
+              asperiores nesciunt iure! Voluptate eius delectus doloremque
+              aliquid unde autem iusto suscipit totam perferendis praesentium
+              quis, officia mollitia reprehenderit ullam modi voluptates
+              possimus quod obcaecati, asperiores amet ab consequuntur sint eum
+              exercitationem? Quod debitis et saepe maxime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!-- Start Catalogue -->
+    <section id="portfolio">
+      <div class="container-xxl vh-100">
+        <div class="gallery col-lg-12 mx-auto">
+          <h1 class="gallery-title text-center fw-bolder">Notre Catalogue</h1>
+        </div>
+        <div>
+          <button
+            class="btn btn-default filter-button active"
+            data-filter="all"
+          >
+            All
+          </button>
+
+          <button class="btn btn-default filter-button" data-filter="enfant">
+            Enfant
+          </button>
+
+          <button class="btn btn-default filter-button" data-filter="femme">
+            Femme
+          </button>
+
+          <button class="btn btn-default filter-button" data-filter="homme">
+            Homme
+          </button>
+
+          <button
+            class="btn btn-default filter-button"
+            data-filter="accessoire"
+          >
+            Accessoires
+          </button>
+        </div>
+        <div class="row g-3">
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center enfant"
+          >
+            <img
+              src="images/enfant/enfant1.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center enfant"
+          >
+            <img
+              src="images/enfant/enfant2.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center femme"
+          >
+            <img
+              src="images/femme/femme2.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center homme"
+          >
+            <img
+              src="images/homme/homme1.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center homme"
+          >
+            <img
+              src="images/homme/homme2.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center accessoire"
+          >
+            <img
+              src="images/accessoires/accesoires1.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center enfant"
+          >
+            <img
+              src="images/enfant/enfant3.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center enfant"
+          >
+            <img
+              src="images/enfant/enfant4.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center accessoire"
+          >
+            <img
+              src="images/accessoires/accesoires2.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center accessoire"
+          >
+            <img
+              src="images/accessoires/accesoires3.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center homme"
+          >
+            <img
+              src="images/homme/homme3.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center homme"
+          >
+            <img
+              src="images/homme/homme4.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center femme"
+          >
+            <img
+              src="images/femme/femme3.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center femme"
+          >
+            <img
+              src="images/femme/femme4.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+          <div
+            class="gallery_product col-lg-4 col-md-6 col-sm-12 filter center femme"
+          >
+            <img
+              src="images/femme/femme5.jpg"
+              class="img-gallery img-fluid img-thumbnail bg-white p-3 w-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="gallery-popup"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+               
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="images/enfant/enfant1.jpg" alt="" class="modal-img img-fluid img-thumbnail bg-white p-3 w-100">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Catalogue -->
+
+    <!-- JS Bootstrap 5.3 -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- JS page -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
